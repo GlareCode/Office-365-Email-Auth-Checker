@@ -1,8 +1,6 @@
 
 Finds all mailbox auth methods and places them into table.csv
 EG.
-MailBox                    AuthType
--------                    --------
 user0@NightCorp.com        phone, password, softwareOath,
 user1@NightCorp.com        password, softwareOath, softwareOath,
 user2@NightCorp.com        password, softwareOath,
