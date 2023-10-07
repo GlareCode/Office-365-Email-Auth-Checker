@@ -1,25 +1,25 @@
 .SYNOPSIS
     Finds all mailbox auth methods and places them into table.csv
-    EG.
-        MailBox                    AuthType
-        -------                    --------
-        user0@NightCorp.com        phone, password, softwareOath,
-        user1@NightCorp.com        password, softwareOath, softwareOath,
-        user2@NightCorp.com        password, softwareOath,
-        user3@NightCorp.com        password,
-        user4@NightCorp.com        password, softwareOath,
+        EG.
+            MailBox                    AuthType
+            -------                    --------
+            user0@NightCorp.com        phone, password, softwareOath,
+            user1@NightCorp.com        password, softwareOath, softwareOath,
+            user2@NightCorp.com        password, softwareOath,
+            user3@NightCorp.com        password,
+            user4@NightCorp.com        password, softwareOath,
 
-    .DESCRIPTION
+.DESCRIPTION
     Connects to MgGraph
     Finds all mailboxes
     Parses each mailboxes enabled auth methods
     Consolidates results to ./table.csv
     Disconnects from MgGraph
 
-    .INPUTS
+.INPUTS
     Will prompt to login to Office 365
 
-    .OUTPUTS
+.OUTPUTS
     Would you like to install Microsoft.Graph Powershell Module?
     Press 1 yes, 2 for No
     Please wait for installation...
@@ -29,13 +29,13 @@
     Press 1 for yes, 2 to exit.
     Goodbye
 
-    .EXAMPLE
+.EXAMPLE
     PS> import-csv ./table.csv
 
-    .EXAMPLE
+.EXAMPLE
     PS> ./MailboxMFAChecker.ps1
 
-    .LINK
+.LINK
     https://lazyadmin.nl/powershell/install-microsoft-graph-module/
     https://activedirectorypro.com/mfa-status-powershell/
     https://regexr.com/
